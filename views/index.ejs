@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stiil.css">
+    <title>BitCoin Calculator</title>
+</head>
+<body>
+    <h1>Bitcoin Calculator</h1>
+    <form action="/" method="POST">
+        How many Bitcoins you have?
+        <input type="text" name="amount" id="amount">
+        <br><br>
+        Bitcoin to:
+        <select name='currency'>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">EU Euros</option>
+        </select>
+        <button type="submit" name="submit">Convert</button>
+    </form>
+    <br>
+   Total:
+    <a class="total"><%=currency +' '+code%></a>
+    
+</body>
+</html>
